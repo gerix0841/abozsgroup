@@ -1,21 +1,22 @@
-import React from 'react'
-import './index.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import './index.css';
 
+/**
+ * Main Application Component
+ * Using React Router for seamless navigation.
+ */
 function App() {
   return (
-    <div className="container">
-      <div className="card">
-        <h1>Köszönöm!</h1>
-        <p>
-          Örülök, hogy ellátogattál az oldalamra. Ez az első React alapú 
-          projektem, ami már a saját domainem alatt fut.
-        </p>
-        <button className="btn" onClick={() => window.location.reload()}>
-          Frissítés
-        </button>
-      </div>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy-policy/:appId?" element={<PrivacyPolicy />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
