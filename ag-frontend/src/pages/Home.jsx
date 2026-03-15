@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <main className="container">
       <header className="hero">
-        <h1>AbozsGroup Applications</h1>
+        <h1>Applications</h1>
         <p>Crafting high-quality mobile experiences for Android users worldwide.</p>
       </header>
 

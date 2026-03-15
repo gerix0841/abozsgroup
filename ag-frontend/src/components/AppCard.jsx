@@ -10,13 +10,14 @@ const AppCard = ({ app }) => {
       <h2>{app.title}</h2>
       <p>{app.description}</p>
       
-      <a href={app.playStoreUrl} target="_blank" rel="noopener noreferrer" className="btn">
-        Get it on Google Play
-      </a>
-      
-      <Link to={`/privacy-policy/${app.id}`} className="btn btn-secondary">
-        Privacy Policy
-      </Link>
+      <div className="card-actions">
+        <a href={app.playStoreUrl} target="_blank" rel="noopener noreferrer" className="btn">
+          Google Play
+        </a>
+        <Link to={`/privacy-policy/${app.id}`} className="btn btn-secondary">
+          Privacy Policy
+        </Link>
+      </div>
     </div>
   );
 };
