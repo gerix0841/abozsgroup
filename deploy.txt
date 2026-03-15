@@ -1,0 +1,5 @@
+Remove-Item -Recurse -Force dist
+
+npm run build
+
+npm run deploy

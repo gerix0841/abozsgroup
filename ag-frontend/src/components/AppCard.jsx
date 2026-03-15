@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 const AppCard = ({ app }) => {
   return (
     <div className="card">
-      <div className="app-icon" style={{ background: app.iconGradient }}></div>
+      <div className="app-icon-wrapper">
+        <img src={app.icon} alt={`${app.title} icon`} className="app-icon-image" />
+      </div>
       <h2>{app.title}</h2>
       <p>{app.description}</p>
       
