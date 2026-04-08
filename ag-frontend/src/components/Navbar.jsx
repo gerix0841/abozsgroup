@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          Abozs<span>Apps</span>
+          Abozs<span>Group</span>
         </Link>
         <div className="nav-links">
           <Link to="/" className="nav-item">Portfolio</Link>

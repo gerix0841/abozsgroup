@@ -1,4 +1,6 @@
-import questionable from '../assets/questionable.png';
+import questionable from '../assets/questionable/questionable.png';
+import screen1 from '../assets/questionable/screen_1.png';
+import screen2 from '../assets/questionable/screen_2.png';
 
 /**
  * Global list of applications.
@@ -7,11 +9,23 @@ import questionable from '../assets/questionable.png';
 export const apps = [
   {
     id: 'questionable',
-    title: 'Questionable',
-    description: 'Icebreaker Game',
+    title: 'Questionable: Icebreaker Game',
+    description: '180+ deep questions to spark great conversations and break the ice with friends',
+    longDescription: `Tired of small talk? Questionable is the ultimate icebreaker tool designed to help you connect with friends, family, or partners on a deeper level. Whether you're at a party, on a first date, or just hanging out, our curated list of 180+ thought-provoking questions will help you discover things you never knew about the people around you.
+
+    Why choose Questionable?
+
+    • 180+ Unique Questions: Carefully selected to avoid boring "yes/no" answers.
+    • Multiple Categories: From lighthearted fun to deep life philosophy.
+    • Minimalist Design: No distractions, just the questions that matter.
+    • Dark Mode Support: Perfect for late-night campfire talks.
+    • 100% Free: All questions are available right from the start.
+
+    Stop asking "How was your day?" and start asking something Questionable. Download now and start the conversation!`,
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.abozsgroup.questionable',
     iconGradient: 'linear-gradient(135deg, #3b82f6, #a855f7)',
     icon: questionable,
+    screenshots: [screen1, screen2],
     policy: {
       effectiveDate: '2026-02-05',
       content: `
