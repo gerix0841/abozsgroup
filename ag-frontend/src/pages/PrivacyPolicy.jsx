@@ -10,8 +10,8 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="container">
-      <nav style={{ marginBottom: '2rem' }}>
-        <Link to="/" className="nav-link">← Back to Portfolio</Link>
+      <nav className="crumb">
+        <Link to="/" className="nav-link">← Back to the shelf</Link>
       </nav>
       
       <article className="policy-content">
